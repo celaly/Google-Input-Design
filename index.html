@@ -1,0 +1,178 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  </head>
+  <style type="text/css">
+    .form-floating-2 {
+      position: relative;
+    }
+    .form-floating-1 {
+      position: relative;
+    }
+    .form-floating {
+      position: relative;
+    }
+    .form-floating-2 .bi {
+      position: absolute;
+      top: calc(2% + 12px);
+      left: calc(2% + 2px);
+      color: #60697b;
+      font-size: 18px;
+    }
+    .form-floating>label {
+      position: absolute;
+      color: #b7b7b7;
+      font-weight: 550;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding: 0.6rem 1rem;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+    .form-control {
+      margin-top: 14px !important;
+      display: block;
+      width: 100%;
+      padding: 1.5rem 1rem;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.7;
+      color: #60697b;
+      background-color: #fefefe;
+      background-clip: padding-box;
+      border: 1px solid rgba(8,60,130,.07);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 1.25rem rgb(30 34 40 / 4%);
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .form-control[value=*] {
+      padding-top: 25px !important;
+    }
+    input {
+      padding-top: 1.5rem !important;
+    }
+    .form-floating>.form-control, .form-floating>.form-select {
+      height: calc(2.5rem + 2px);
+      line-height: 1.25;
+    }
+    .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+      opacity: 1;
+      transform: scale(.8) translateY(-0.4rem) translateX(0.2rem);
+    }
+    .form-control:focus::placeholder {
+      display: none;
+    }
+    .form-control:not(:focus)~ label {
+      opacity: 0;
+    }
+    .form-control:focus::placeholder {
+      opacity: 0;
+    }
+    .form-control:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0px 0rem rgb(0 123 255 / 25%);
+    }
+    .form-control:not(:placeholder-shown) {
+      padding-top: 30px !important;
+    }
+    .form-floating-1 {
+      top: 0px;
+    }
+    .form-floating-1>.form-control:focus~label, .form-floating-1>.form-control:not(:placeholder-shown)~label, .form-floating-1>.form-select~label {
+      opacity: 1;
+      transform: scale(.8) translateY(-0.4rem) translateX(0.2rem);
+    }
+    .form-floating-1>label {
+      background: #FFF;
+      padding-right: 1rem;
+      color: #b7b7b7;
+      font-weight: 550;
+      padding-left: 1rem;
+      position: absolute;
+      top: -5px;
+      left: 17px;
+      height: max-content;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+    .form-floating-2>label {
+      background: #FFF;
+      padding-right: 1rem;
+      color: #b7b7b7;
+      font-weight: 550;
+      padding-left: 1rem;
+      position: absolute;
+      top: -5px;
+      left: 17px;
+      height: max-content;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+    .form-floating-2 input {
+      padding-left: 3rem !important;
+    }
+    .form-floating-2>.form-control:focus~label, .form-floating-2>.form-control:not(:placeholder-shown)~label, .form-floating-2>.form-select~label {
+      opacity: 1;
+      transform: scale(.8) translateY(-0.4rem) translateX(0.2rem);
+    }
+    .form-floating-2 .form-control:not(:placeholder-shown) {
+      padding-top: 24px !important;
+    }
+    
+  </style>
+  <body>
+
+
+
+
+
+
+    <div class="w-25 m-2">
+      <div class="form-floating">
+        <input id="textInputExample" type="search" class="form-control" placeholder="Kullanıcı Adı Yazınız.">
+        <label for="textInputExample">Kullanıcı Adı</label>
+      </div>
+    </div>
+    <div class="w-25 m-2">
+      <div class="form-floating-1">
+        <input id="textInputExample" type="search" class="form-control" placeholder="Kullanıcı Adı Yazınız.">
+        <label for="textInputExample">Kullanıcı Adı</label>
+      </div>
+    </div>
+    <div class="w-25 m-2">
+      <div class="form-floating-2">
+        <i class="bi bi-search"></i>
+        <input id="textInputExample" type="search" class="form-control" placeholder="Kullanıcı Adı Yazınız.">
+        <label for="textInputExample">Kullanıcı Adı</label>
+      </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  </html>
